@@ -60,6 +60,6 @@ const server = http.createServer(
     }
 )
 
-server.listen(5000, () => {
+server.listen(8080, () => {
     console.log("server je pokrenut");
 })
