@@ -7,7 +7,7 @@ const server = http.createServer(
         let contentType;
         let contentFile;
         contentFile = req.url;
-        console.log(contentFile);
+
         if (req.url == "/") {
             contentFile = "index.html";
         }
@@ -30,7 +30,7 @@ const server = http.createServer(
         }
 
         const contentPath = path.join(__dirname, "public", contentFile);
-        console.log(contentPath);
+
         fs.readFile(contentPath, (err, data) => {
             if (err) {
                 if (err.code == "ENOENT") {
