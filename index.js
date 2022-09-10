@@ -60,6 +60,6 @@ const server = http.createServer(
     }
 )
 
-server.listen(80, () => {
+server.listen(process. env. PORT || 8080, () => {
     console.log("server je pokrenut");
 })
